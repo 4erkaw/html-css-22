@@ -1,0 +1,76 @@
+/* Основной текст #000000 */
+/* Вторичный цвет rgba(0,0,0,0.8) */
+/* Белый #ffffff */
+/* Акцент #18A0FB */
+/* Вторичный цвет фона #F5F5F5 */
+:root {
+  --primary-text-color: rgba(0, 0, 0, 0.8);
+  --title-text-colot: #000;
+  --accent: #18a0fb;
+  --primary-white-color: #fff;
+}
+.page {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+}
+a {
+  text-decoration: none;
+}
+
+/* Logo */
+.logo {
+  color: var(--title-text-colot);
+}
+.logo:hover {
+  color: var(--accent);
+}
+
+/* Site nav */
+.list {
+  list-style: none;
+}
+.site-nav a {
+  color: var(--accent);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--title-text-colot);
+}
+.site-nav .link.current {
+  color: var(--title-text-colot);
+}
+
+/* Hero section */
+.hero-title {
+  color: var(--title-text-colot);
+}
+
+/* Advantages */
+.section-title {
+  color: var(--title-text-colot);
+}
+.feature-list .title {
+  color: var(--title-text-colot);
+}
+.feature-list .link {
+  color: var(--accent);
+}
+
+/* Work exampls */
+.work-list .title {
+  color: var(--title-text-colot);
+}
+
+/* Button */
+.button {
+  color: var(--title-text-colot);
+  background-color: var(--primary-white-color);
+}
+.button.primary {
+  color: var(--primary-white-color);
+  background: var(--accent);
+}
+.button.secondary {
+  color: var(--accent);
+  background-color: var(--primary-white-color);
+}
