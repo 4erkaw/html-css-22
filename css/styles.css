@@ -8,6 +8,7 @@
   --title-text-colot: #000;
   --accent: #18a0fb;
   --primary-white-color: #fff;
+  --secondary-font-color: #f5f5f5;
 }
 .page {
   background-color: var(--primary-white-color);
@@ -16,6 +17,15 @@
   letter-spacing: -0.015em;
   font-size: 18px;
   line-height: 1.67;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid black;
 }
 
 /* Logo */
@@ -30,9 +40,20 @@
   color: var(--accent);
 }
 
+/* Page header */
+.page.header {
+  background-color: #ccc;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid black;
+  width: 1440px;
+}
+
 /* Site nav */
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .site-nav a {
   color: var(--accent);
@@ -50,25 +71,69 @@
 }
 
 /* Hero section */
+
+.hero {
+  text-align: center;
+}
+
 .hero-title {
   color: var(--title-text-colot);
   font-style: normal;
   font-weight: normal;
   font-size: 56px;
   line-height: 1.43;
-  text-align: center;
+  outline: 1px solid black;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
 }
 
 /* Advantages */
+
+/* .section {
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid black;
+  width: 1440px;
+  padding-bottom: 120px;
+  padding-top: 120px;
+} */
+
+.section.no-padding {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
 .section-title {
   color: var(--title-text-colot);
   font-weight: 400;
   font-size: 48px;
   line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 60px;
 }
+
+.section-title.centered {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .section-description {
   font-size: 36px;
   line-height: 1.39;
+  margin-bottom: 80px;
+  margin-top: 0;
+}
+
+.section {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+
+.join-us {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Features & Examples */
@@ -78,19 +143,44 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 24px;
 }
+
+.work-list.item {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--primary-white-color);
+}
+
+.work-list > .item:nth-child(2n) {
+  background-color: var(--secondary-font-color);
+}
+
+.work-list p,
+.feature-list p {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
 .feature-list .link {
   color: var(--accent);
 }
 
 /* Button */
 .button {
+  border-radius: 6px;
+  border: 1px solid transparent;
+  padding: 11px 34px;
+  min-width: 130px;
   color: var(--title-text-colot);
   background-color: var(--primary-white-color);
   font-weight: 500;
   font-size: 15px;
   line-height: 1.2;
   text-decoration: none;
+  display: inline-block;
+  text-align: center;
 }
 .button.primary {
   color: var(--primary-white-color);
@@ -99,6 +189,7 @@
 .button.secondary {
   color: var(--accent);
   background-color: var(--primary-white-color);
+  border-color: var(--accent);
 }
 
 /* List */
